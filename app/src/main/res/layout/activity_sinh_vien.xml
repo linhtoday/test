@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+
+    tools:context=".SinhVienActivity">
+
+
+
+
+
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:id="@+id/ll_add_task"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <ImageView
+            android:layout_gravity="center"
+            android:src="@drawable/ic_plus_one_black_24dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+        <TextView
+            android:layout_marginLeft="6dp"
+            android:gravity="center_vertical"
+            android:text="Task"
+            android:textColor="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_weight="7"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+
+        android:layout_weight="0.5"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <Button
+            android:id="@+id/btn_add_file"
+            android:textStyle="bold"
+            android:fontFamily="monospace"
+            android:background="@color/colorPrimary"
+            android:textColor="#ffffff"
+            android:layout_weight="1"
+            android:text="Add file"
+            android:layout_marginRight="1dp"
+            android:textAllCaps="false"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btn_send_file"
+            android:layout_marginLeft="1dp"
+            android:textStyle="bold"
+            android:fontFamily="monospace"
+            android:textColor="#ffffff"
+            android:background="@color/colorPrimary"
+            android:layout_weight="1"
+            android:text="Gui"
+            android:textAllCaps="false"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

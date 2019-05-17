@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+
+    android:id="@+id/card_view_chat_right"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:padding="8dp"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_marginTop="10dp"
+        android:id="@+id/type_chat"
+        android:layout_toLeftOf="@+id/txt_chat"
+        android:src="@drawable/ic_eye"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="hello"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/txt_chat"
+        android:textSize="18sp"
+
+        android:padding="8dp"
+        android:layout_alignParentRight="true"/>
+
+</RelativeLayout>
